@@ -26,3 +26,7 @@ sumList list = sum list
 productList list = product list
 isInList target list = target `elem` list
 
+boomBangs xs = [if x > 10 then "BANG!" else "BOOOM!"| x <- xs, odd x]
+
+length' x = sum([1 | _ <- x])
+upperCased letters = [c | c <- letters, c `elem` ['A'..'Z']]
